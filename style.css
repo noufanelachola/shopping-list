@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, rgb(77, 136, 226) , rgb(243, 176, 52));
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    margin-top: 2rem;
+
+
+
+    max-width: 80%;
+}
+
+.content h2{
+    font-weight: 300;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.content .add {
+    display: flex;
+    justify-content: center;
+    column-gap: 0;
+    width: 20.6rem;
+}
+
+.content .add input {
+
+    width: 13rem;
+    border: 0;
+    padding: 0.5rem;
+    border-radius: 50px 0 0 50px;
+}
+
+.content .add .button-add {
+    padding: 0.5rem;
+    border-radius: 0 50px 50px 0;
+    border: 0;
+    line-height: 0.9rem;
+    width: 7.6rem;
+
+}
+
+.content ul li {
+    list-style: none;
+    background-image: linear-gradient(90deg , rgb(247, 47, 47), rgb(240, 79, 30)) ;
+   
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    width: 20.6rem;
+    border: 0;
+    border-radius: 50px;
+
+    display: flex;
+    /* flex-grow: 1; */
+    justify-content: space-between;
+
+    animation: 0.5s ease-in-out;
+    animation-name: slideIn;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: rotateX(90deg) translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0deg) translateY(0px);
+    }
+}
+
+.slideOut{
+    transform: rotateX(90deg) translateY(-10px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.content ul li span {
+    color: white;
+    padding-left: 0.5rem;
+}
+
+.button-acc {
+    border: 0;
+    border-radius: 50px;
+    padding: 0.25rem 0.5rem;
+    width: 2.5rem;
+
+    font-size: 0.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-done {
+    margin-left: auto;
+    margin-right: 0.5rem;
+}
+
+.button-edit{
+    margin-right: 0.5rem;
+}
+
+.itemDone {
+    text-decoration: line-through;
+}   
